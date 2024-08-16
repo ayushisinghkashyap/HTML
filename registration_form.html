@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    
+</html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        /*Basic styling for the form*/
+        body{
+            font-family: Arial, sans-serif;
+            background-color: blue;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #4bb5e6;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"]
+
+        {
+            width: 100%;
+            padding: 8px;
+            border:1px solid rgb(191, 243, 148);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button[type="submit"]
+        {
+            background-color: rgba(220, 18, 223, 0.37);
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover{
+            background-color: rgb(98, 98, 216);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration form</h2>
+            <div class="form-group">
+                <label for="username">UserName:</label>
+                <input tupe="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" id="mobile" name="mobile" required>
+            </div>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>

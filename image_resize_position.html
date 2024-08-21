@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Resize and Position</title>
+        <style>
+
+            /*Container for the image*/
+
+            .image-container {
+                width: 300px;
+                /* Set the desired width of the content box */
+
+                height: 500px;
+                /*Set the desired heigth of the content*/
+
+                position: relative;
+                /*Enable positon*/
+
+                border: 10px solid rgb(241, 196, 72);
+                /* Optional : Add a border for visual refrence*/
+            }
+            .img-container {
+                width: 300px;
+                /* Set the desired width of the content box */
+
+                height: 300px;
+                /*Set the desired heigth of the content*/
+
+                position: relative;
+                /*Enable positon*/
+
+                border: 10px solid rgb(30, 222, 135);
+                /* Optional : Add a border for visual refrence*/
+            }
+
+            /* Styling for the contained image*/
+            .image-container img{
+                max-width: 100%;
+                /*resize the image to fit its content box*/
+
+                height: 100%;
+                /*Maintain th easpect ratio*/
+
+                top: 5%;
+                /* 10% from the top*/
+
+                left: 5px;
+                /*5px from the left*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image-container">
+            <img src="Labrado_pic.jpeg" alt="Resized and Positioned Image"
+        </div>
+        <br>
+        <br>
+        <div class="img-container">
+            <img src="Wolf.jpg" alt="Resized and Positioned Image"
+        </div>
+
+        <br>
+        <br>
+
+        <div class="img-container">
+            <img src="labrado.jpg" alt="Resized and Positioned Image"
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,51 @@
+Applying CSS Table: Styling even and odd cells 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Table: Styling even and odd cells </title>
+        <style>
+            /*Style the even rows (tr)*/
+            tr:nth-child(even) {
+                background-color:aqua;
+            }
+
+            /*Style the odd rows (tr)*/
+            tr:nth-child(odd) {
+                background-color: blue;
+            }
+
+            /*Style even cells (td) within even rows */
+            tr:nth-child(odd) td:nth-child(odd) {
+                color: bisque;
+                font-weight:bold;
+            }
+ 
+            /*Style odd cells (td) within even rows */
+            tr:nth-child(even) td:nth-child(even) {
+                color: rgb(239, 125, 205);
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+    
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+    
+            </tr>
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+    
+            </tr>
+        </table>
+    
+    </body>
+</html>

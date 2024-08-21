@@ -1,0 +1,27 @@
+Applying a block element in CSS acquires up the full width available for that content.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Block Element Example</title>
+        <style>
+            .block-element {
+                background-color: rgb(55, 154, 220);
+                border: 10px solid black;
+                padding: 100px;
+                /* The following properties ensure the element takes up the full width available*/
+                
+                display: block;
+                width: 100px; /* try % in place of px to see difference*/
+                box-sizing: border-box;
+
+                /* Includes padding and border on the total width*/
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block-element">
+            This is a block level element. It takes up the full width available.
+        </div>
+    </body>
+</html>

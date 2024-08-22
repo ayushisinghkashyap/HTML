@@ -1,0 +1,41 @@
+/*Reset some default styles for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Style the header*/
+header {
+    background-color: #0cec2a;
+    color: rgb(170, 242, 218);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/* Style the sidebar*/
+.sidebar {
+    background-color: rgb(243, 233, 124);
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 100px; /* Height of the header */
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+/* Style the sidebar links */
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar nav ul {
+    margin-bottom: 100px;
+
+}
+main{
+    margin-left: 250px;
+    padding:20px;
+    margin-top: 80px;
+}

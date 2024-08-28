@@ -1,0 +1,38 @@
+Implementing a Java Script program to implement onClick and onSubmit event
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onClick and onSubmit Events Example</title>
+</head>
+<body>
+    <h1>onClick and onSubmit Events Example</h1>
+    
+    <!-- Example with onClick Event -->
+    <h2>Click the button to change the text: </h2>
+    <p id="clickExample">Click me!</p>
+    <button onclick="changeText()">Click Me</button>
+    
+    <!-- Example with onSubmit Event -->
+    <h2>Submit a Form:</h2>
+    <form id="myForm" onsubmit="submitForm()">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required ><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required ><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        // Function for onclick event
+        function changeText() {
+            var clickExample = document.getElementById("clickExample");
+            clickExample.innerHTML = "Button clicked!";
+        }
+        function submitForm(){
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            alert("From submitted with Name: "+name+" and Email: "+email);
+        }
+    </script>
+</body>
+</html>

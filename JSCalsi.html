@@ -1,0 +1,99 @@
+Implementing a java Sript program to implement calculator application at real time .
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Calculator</title>
+    <style>
+        .calculator {
+            width: 300px;
+            margin: 0 auto ;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 24px;
+            text-align: right;
+        }
+
+        .btn {
+            width: 25%;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #1829e7;
+            background-color: aqua;
+        }
+
+        #result {
+            font-weight: bold;
+        }
+
+        .btn2 {
+            width: 25%;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #e80ce4;
+            background-color: rgb(227, 193, 237);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Real Time Calculator</h1>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <br>
+        
+            <button class="btn" onclick="appendToResult('1')">1</button>
+            <button class="btn" onclick="appendToResult('2')">2</button>
+            <button class="btn" onclick="appendToResult('3')">3</button>
+            <button class="btn2" onclick="appendToResult('+')">+</button>
+        
+        <br>
+        
+            <button class="btn" onclick="appendToResult('4')">4</button>
+            <button class="btn" onclick="appendToResult('5')">5</button>
+            <button class="btn" onclick="appendToResult('6')">6</button>
+            <button class="btn2" onclick="appendToResult('-')">-</button>
+        
+        <br>
+        
+            <button class="btn" onclick="appendToResult('7')">7</button>
+            <button class="btn" onclick="appendToResult('8')">8</button>
+            <button class="btn" onclick="appendToResult('9')">9</button>
+            <button class="btn2" onclick="appendToResult('*')">*</button>
+        
+        <br>
+        
+            <button class="btn" onclick="appendToResult('0')">0</button>
+            <button class="btn" onclick="clearResult()">C</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+            <button class="btn2" onclick="appendToResult('/')">/</button>
+        
+    </div>
+
+    <script>
+        function appendToResult(value){
+            document.getElementById('result').value += value;
+        }
+
+        function clearResult(){
+            document.getElementById('result').value = '';
+        }
+
+        function calculateResult(){
+            try{
+                var expression = document.getElementById('result').value;
+                var result = eval(expression);
+                document.getElementById('result').value = result;
+            }
+            catch (error){
+                document.getElementById('result').value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>

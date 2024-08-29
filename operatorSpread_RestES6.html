@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spread and Rest Operators in ES6</title>
+</head>
+<body>
+    <h1>Spread and Rest Operators in ES6</h1>
+
+    <script>
+        // Spread Operator
+        const numbers = [1, 2, 3];
+        const newNumbers = [...numbers, 4, 5];
+
+        document.write(`<h2>Spread Operator:</h2>`);
+        document.write(`Original Array: ${numbers}<br>`);
+        document.write(`New Array: ${newNumbers}<br><br>`);
+
+        // Rest Operator
+        const fruits = ["apple", "banana","mango","cherry", "date"];
+        const [firstFruit,secondFruit, ...restFruits] = fruits;
+
+        document.write(`<h2>Rest Operator:</h2>`);
+        document.write(`First Fruit: ${firstFruit}<br>`);
+        document.write(`First Fruit: ${secondFruit}<br>`);
+        document.write(`Rest of the Fruits: ${restFruits}<br>`);
+    </script>
+</body>
+</html>
